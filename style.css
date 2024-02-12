@@ -10,13 +10,13 @@ body{
     font-weight: 700;
 }
 .main{
-    width:1540px;
-    height:1600px;
+    width:100vw;
+    height:100vh;
     /* background-color: black; */
 }
 .Content{
     width: 100%;
-    height: 1600px;
+    height: 100vh;
     /* background-color: blue; */
     display: flex;
 }
@@ -40,7 +40,7 @@ body{
 }
 .left-nev-top{
     width: 100%;
-    height: 9%;
+    height: 20%;
     background-color: rgba(0, 0, 0, 0.9);
     margin-bottom: 2%;
     color: #fff;
@@ -50,44 +50,63 @@ body{
     margin-left: 5px;
 }
 .left-nev-top-home-titel{
-    width: 100%;
-    height: 33%;
+    width: 190px;
+    height: 34px;
     /* background-color: chocolate; */
     display: flex;
-    padding-top: 13px;
+    padding-top: 3px;
+    margin-bottom: 25px;
 }
 #home-icon{
     font-size: 40px;
     color: #fff;
     margin-right: 15px;
     margin-left: 20px;
+    width: 40px;
+    height: 45px;
 }
 .home-text{
     margin-top: 7px;
+    width: 116px;
+    height: 25px;
+    /* background-color: skyblue; */
 }
 .left-nev-top-serch-bar{
     width: 100%;
-    height: 50%;
+    height: 42%;
     /* background-color: green; */
 }
-
-.left-nev-botam{
+.left-nev-botam-scrol{
+    overflow-y: auto;
     width: 100%;
     height: 80%;
+    overflow-x: hidden;
+    /* margin-top: 200px; */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.left-nev-botam{
+    width: 100%;
+    height: 70%;
     /* background-color: skyblue; */
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     margin-left: 5px;
+    margin-top: 105px;
+}
+.fixed-nev-left-botem{
+    position: fixed;
+    top: 167px;
+    left: 5px;
 }
 .heder-left-nev{
     width: 282px;
-    height: 40px;
+    height: 47px;
     /* padding: 8px 16px; */
     display: flex;
 }
 #home-icon-add{
-    margin-top: 16px;
-    margin-left: 70px 
+    margin-top: 5px;
+    margin-left: 16px 
 }
 #chevron_right{
     font-size: 36px;
@@ -95,15 +114,21 @@ body{
 .heder2-nev-titel{
     width: 51px;
     height: 24px;
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background-color: #121212;
     color: #fff;
     border-radius: 9999px;
     border-bottom-color: rgb(255, 255, 255);
     margin-left: 15px;
-    margin-top: 25px;
+    margin-top: 13px;
     padding: 4px 12px;
     text-align: center;
     font-size: 16px;
+    cursor: pointer;
+}
+.heder2-nev-titel:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.7s;
 }
 .recents-serch{
     width: 286px;
@@ -111,7 +136,7 @@ body{
     padding: 2px 4px 0px 8px;
     /* border: 1px solid blue; */
     display: flex;
-    margin-top: 35px;
+    margin-top: 19px;
     /* text-align: center; */
 }
 #recent-serch-icon{
@@ -131,7 +156,12 @@ body{
     /* border: 2px solid green; */
     padding-top: 10px;
     display: flex;
+    cursor: pointer;
 } 
+.song-list-box:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.7s;
+}
 .box1-song{
     width: 50px;
     height: 100%;
@@ -161,7 +191,7 @@ body{
 }
 .right-content{
     width: 1150px;
-    height: 87%;
+    height: 100vh;
     margin-left: 30px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
@@ -175,7 +205,8 @@ body{
     margin-bottom: 10px;
     position: fixed;
     top: 10px;
-    left: 376px;
+    left: 347px;
+    border-radius: 9px;
 }
 .right-content-box-row1{
     width: 100%;
@@ -194,6 +225,7 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     margin-right: 10px;
+    cursor: no-drop;
 }
 .right-btn1{
     width: 150px;
@@ -206,6 +238,11 @@ body{
     border-radius: 15px;
     font-family: system-ui;
     margin-right: 10px;
+    cursor: pointer;
+}
+.right-btn1:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    transition: 0.7s;
 }
 .right-content-head2{
     display: flex;
@@ -219,6 +256,11 @@ body{
     border-radius: 50%;
     text-align: center;
     margin-left: 10px;
+    cursor: pointer;
+}
+.right-hed-notifiaction:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    transition: 0.7s;
 }
 .profile-icon{
     width: 28px;
@@ -245,6 +287,11 @@ body{
     font-size: 18px;
     border: none;
     margin-left: 10px;
+    cursor: pointer;
+}
+.row2-btn1:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.7s;
 }
 .row2-btn2{
     width: 100px;
@@ -254,6 +301,11 @@ body{
     color: #fff;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+}
+.row2-btn2:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.7s;
 }
 .scrolebal-bar-r3r4{
     margin-top: 151px;
@@ -274,7 +326,12 @@ body{
     /* margin-top: 5px; */
     display: flex;
     margin-left: 10px;
+    cursor: pointer;
 
+}
+.row3-box1:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.7s;
 }
 .row3-img{
     border-radius: 4px 0px 0px 4px;
@@ -301,24 +358,59 @@ body{
 }
 h2{
     color: #fff;
+    cursor: pointer;
+}
+h2:hover{
+    border-bottom: 3px solid #fff;
+    transition: 0.5s;
+    width: 350px;
+}
+.h2-width:hover{
+    width: 200px;
+    border-bottom: 3px solid #fff;
+    transition: 0.5s;
 }
 .row4-box1{
     width: 130px;
-    height: 233px;
+    height: 225px;
     padding: 16px;
     background-color: #121212;
     margin-right: 24px;
     margin-bottom: 20px;
     border-radius: 10px;
+    cursor: pointer;
+}
+.row4-box1:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.7s;
 }
 .row4-box1-img{
     width: 142px;
     height: 142px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     /* background-color: red; */
 }
 .row4-box1-content{
     width: 142px;
-    height: 70px;
+    height: 95px;
     /* background-color: skyblue; */
+}
+.spotify-buton{
+    position: relative;
+    left: 73px;
+    height: 60px;
+    width: 60px;
+    bottom: 54px;
+    opacity: 1;
+    transition: opacity 0.3s  ease;
+    cursor: pointer;
+}
+.row4-box1:hover .spotify-buton{
+    /* display: block; */
+    /* display: ; */
+    /* opacity: 1; */
+}
+#playButton {
+    /* Your play button styles */
+    cursor: pointer; /* Show cursor as pointer */
 }
