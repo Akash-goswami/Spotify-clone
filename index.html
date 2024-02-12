@@ -539,11 +539,6 @@
                                                 class="song-imges">
                                             <img src="imges/spotify-video-play-button-png.gif" alt="Play Button"
                                                 class="spotify-buton" id="playButton">
-                                                <audio id="audioPlayer">
-                                                    <source src="your-audio-file.mp3" type="audio/mp3">
-                                                    Your browser does not support the audio element.
-                                                </audio>
-
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">RAP 91</h3>
@@ -1011,21 +1006,6 @@
         <!-- content end  -->
     </div>
     <!-- end main box -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    var playButton = document.getElementById("playButton");
-    var audioPlayer = document.getElementById("audioPlayer");
-
-    playButton.addEventListener("click", function() {
-        if (audioPlayer.paused) {
-            audioPlayer.play();
-        } else {
-            audioPlayer.pause();
-        }
-    });
-});
-
-    </script>
 </body>
 
 </html>
