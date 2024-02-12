@@ -96,7 +96,7 @@ body{
 .fixed-nev-left-botem{
     position: fixed;
     top: 167px;
-    left: 5px;
+    left: 21px;
 }
 .heder-left-nev{
     width: 282px;
@@ -327,7 +327,58 @@ body{
     display: flex;
     margin-left: 10px;
     cursor: pointer;
-
+}
+#spotify-buton-row3{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 34px;
+    top: 5px;
+    transition: opacity 0.3s  ease;
+    cursor: pointer;
+    opacity: 0;
+}
+.row3-box1:hover #spotify-buton-row3{
+    opacity: 1;
+}
+#spotify-buton-row3-img2{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 25px;
+    top: 5px;
+    transition: opacity 0.3s  ease;
+    cursor: pointer;
+    opacity: 0;
+}
+.row3-box1:hover #spotify-buton-row3-img2{
+    opacity: 1;
+}
+#spotify-buton-row3-img3{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 47px;
+    top: 5px;
+    transition: opacity 0.3s  ease;
+    cursor: pointer;
+    opacity: 0;
+}
+.row3-box1:hover #spotify-buton-row3-img3{
+    opacity: 1;
+}
+#spotify-buton-row3-img4{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    transition: opacity 0.3s  ease;
+    cursor: pointer;
+    opacity: 0;
+}
+.row3-box1:hover #spotify-buton-row3-img4{
+    opacity: 1;
 }
 .row3-box1:hover{
     background-color: rgba(255, 255, 255, 0.2);
@@ -407,4 +458,8 @@ h2:hover{
 }
 .row4-box1:hover .spotify-buton{
     opacity: 1;
+}
+#playButton {
+    /* Your play button styles */
+    cursor: pointer; /* Show cursor as pointer */
 }
