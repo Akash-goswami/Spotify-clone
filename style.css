@@ -446,7 +446,7 @@ h2:hover{
     height: 95px;
     /* background-color: skyblue; */
 }
-.spotify-buton{
+#spotify-buton{
     position: relative;
     left: 73px;
     height: 60px;
@@ -456,7 +456,7 @@ h2:hover{
     transition: opacity 0.3s  ease;
     cursor: pointer;
 }
-.row4-box1:hover .spotify-buton{
+.row4-box1:hover #spotify-buton{
     opacity: 1;
 }
 #playButton {
