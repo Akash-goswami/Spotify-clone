@@ -1,3 +1,6 @@
+// button javascript start
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var playButtons = document.querySelectorAll(".playButton");
     var audioPlayers = document.querySelectorAll(".audioPlayer");
@@ -22,3 +25,18 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// button javascript end 
+// animation javascript start 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Wait for the DOM content to be fully loaded
+    setTimeout(function() {
+        // Hide fullscreen GIF after a certain time (e.g., 5 seconds)
+        document.getElementById("fullscreen-container").style.display = "none";
+        // Show other content
+        document.getElementById("content").style.display = "block";
+    }, 5000); // Adjust this time according to your preference
+});
+
+// animation javascript end 

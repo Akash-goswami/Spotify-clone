@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <!-- web page animation start -->
+    <div id="fullscreen-container">
+        <img src="https://cdn.dribbble.com/users/2284480/screenshots/15988331/media/9335cd177db6913a8059ffc9d0c20e11.gif" alt="Your GIF Animation" >
+    </div>
+    <!-- web page animation end -->
     <!-- start main box -->
     <div class="main">
         <!-- content start  -->
@@ -24,12 +29,12 @@
                         <div class="left-nev-top">
                             <div class="left-nev-top-home-titel">
                                 <i class="material-icons" id="home-icon">home</i>
-                                <div class="home-text">Home</div>
+                                <div class="home-text1"><a href="index.html">Home</a></div>
                             </div>
                             <div class="left-nev-top-serch-bar">
                                 <div class="left-nev-top-home-titel">
-                                    <i class="material-icons" id="home-icon" style="color: gray;">search</i>
-                                    <div class="home-text" style="color:#b3b3b3;" width="100px" height="50px">Search
+                                    <i class="material-icons" id="home-icon" >search</i>
+                                    <div class="home-text2">Search
                                     </div>
                                 </div>
                             </div>
@@ -41,16 +46,17 @@
                                     <div class="heder-left-nev">
                                         <div class="heder-left-nev-left">
                                             <div class="left-nev-top-home-titel">
-                                                <i class="material-icons" id="home-icon" style="color: gray;">search</i>
-                                                <div class="home-text" style="color:#b3b3b3;" width="100px"
-                                                    height="50px">Your Library</div>
+                                                <span class="material-symbols-outlined" id="home-icon" >
+                                                    left_panel_close
+                                                    </span>
+                                                <div class="home-text3">Your Library</div>
                                             </div>
                                         </div>
                                         <div class="heder-left-nev-left">
                                             <i class="material-icons" style="font-size:35px;" id="home-icon-add">add</i>
-                                            <span class="material-symbols-outlined" id="chevron_right">
+                                            <a href="playlist1.html" ><span class="material-symbols-outlined" id="chevron_right">
                                                 chevron_right
-                                            </span>
+                                            </span></a>
                                         </div>
                                     </div>
                                     <!-- nev heder end  -->
@@ -64,7 +70,7 @@
                                 <!-- recent-ne start  -->
                                 <div class="heder-left-nev">
                                     <div class="recents-serch">
-                                        <i class="material-icons" id="recent-serch-icon" style="color: gray;">search</i>
+                                        <i class="material-icons" id="recent-serch-icon">search</i>
                                         <div>Recents</div>
                                         <div><span class="material-symbols-outlined">
                                                 list
@@ -75,8 +81,10 @@
                                 <!-- song list start  -->
                                 <div class="song-lists">
                                     <div class="song-list-box">
-                                        <div class="box1-song"><img src="imges/liked-songs-640.png" alt="" width="55px"
-                                                height="55px" class="song-imges"></div>
+                                        <div class="box1-song">
+                                            <img src="imges/liked-songs-640.png" alt="" width="55px" height="55px"
+                                                class="song-imges">
+                                        </div>
                                         <div class="box2-song">
                                             <div class="box2-song-titel">
                                                 <h4 style="color: #fff; font-size: 18px;">Like Songs</h4>
@@ -100,6 +108,13 @@
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Artist</p>
                                             </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Faasle-(PagalSongs.Com.IN).mp3" type="audio/mp3">
+                                                </audio>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="song-list-box">
@@ -111,6 +126,13 @@
                                             </div>
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • Spotify</p>
+                                            </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Close Your Eyes(PaglaSongs).mp3" type="audio/mp3">
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -124,6 +146,13 @@
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • Spotify</p>
                                             </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Close Your Eyes(PaglaSongs).mp3" type="audio/mp3">
+                                                </audio>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="song-list-box">
@@ -131,12 +160,19 @@
                                                 height="55px" class="song-imges"></div>
                                         <div class="box2-song">
                                             <div class="box2-song-titel">
-                                                <h4 style="color: #fff; font-size: 18px;">Best Boxing Songs</h4>
+                                                <h4 style="color: #fff; font-size: 18px;">Parmesh Verma</h4>
                                             </div>
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • SATID by Music MoodsSATID by
                                                     Music
                                                     Moods</p>
+                                            </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Rubicon Drill_320(PagalWorld.com.cm).mp3" type="audio/mp3">
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -150,6 +186,13 @@
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • Spotify</p>
                                             </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Faasle-(PagalSongs.Com.IN).mp3" type="audio/mp3">
+                                                </audio>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="song-list-box">
@@ -161,6 +204,13 @@
                                             </div>
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • Spotify</p>
+                                            </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Moye More_320(PagalWorld.com.cm).mp3" type="audio/mp3">
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -174,6 +224,13 @@
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • It's_Rush</p>
                                             </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                </audio>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="song-list-box">
@@ -184,7 +241,14 @@
                                                 <h4 style="color: #fff; font-size: 18px;">Ak</h4>
                                             </div>
                                             <div class="box2-song-titel">
-                                                <p class="box2-song-playlist">Playlist • Akash Goswami</p>
+                                                <p class="box2-song-playlist">Playlist • Spotify Music</p>
+                                            </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Aam Jahe Munde_320(PagalWorld.com.cm).mp3" type="audio/mp3">
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -198,6 +262,13 @@
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • Harshit Vishwakarma</p>
                                             </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                </audio>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="song-list-box">
@@ -209,6 +280,13 @@
                                             </div>
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Playlist • Virus</p>
+                                            </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Close Your Eyes(PaglaSongs).mp3" type="audio/mp3">
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -222,6 +300,13 @@
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Artist</p>
                                             </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Apa Fer Milange-(DJPunjab).mp3" type="audio/mp3">
+                                                </audio>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="song-list-box">
@@ -234,6 +319,13 @@
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Artist</p>
                                             </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Husn - Anuv Jain-(DJPunjab).mp3" type="audio/mp3">
+                                                </audio>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="song-list-box">
@@ -245,6 +337,13 @@
                                             </div>
                                             <div class="box2-song-titel">
                                                 <p class="box2-song-playlist">Artist</p>
+                                            </div>
+                                            <div>
+                                                <img src="imges/spotify-video-play-button-png.gif" alt=""
+                                                    id="song-list-spotify-btn" class="playButton">
+                                                <audio class="audioPlayer">
+                                                    <source src="musics/Heeriye Heeriye - Jasleen Royal ! Arijit Singh.mp3" type="audio/mp3">
+                                                </audio>
                                             </div>
                                         </div>
                                     </div>
@@ -263,14 +362,14 @@
                             <div class="right-content-box-row1">
                                 <div class="right-content-head1">
                                     <div class="right-arrow">
-                                        <span class="material-symbols-outlined" id="chevron_right">
+                                    <a href="index.html" title="Home"><span class="material-symbols-outlined" id="chevron_right">
                                             chevron_left
-                                        </span>
+                                        </span></a>    
                                     </div>
-                                    <div class="right-arrow">
-                                        <span class="material-symbols-outlined" id="chevron_right">
+                                    <div class="right-arrow" title="Playlist">
+                                        <a href="playlist1.html"><span class="material-symbols-outlined" id="chevron_right">
                                             chevron_right
-                                        </span>
+                                        </span></a>
                                     </div>
 
                                 </div>
@@ -278,7 +377,7 @@
                                     <button class="right-btn1">
                                         Explore Premium
                                     </button>
-                                    <button class="right-btn1">
+                                    <button class="right-btn1 right-btn2">
                                         <span class="material-symbols-outlined" style="font-size: 19px;">
                                             downloading
                                         </span>
@@ -315,7 +414,7 @@
                                     <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton-row3"
                                         class="playButton">
                                     <audio class="audioPlayer">
-                                        <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                        <source src="musics/King Shit_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                     </audio>
                                 </div>
                                 <div class="row3-box1">
@@ -342,7 +441,7 @@
                                     <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton-row3"
                                         class="playButton">
                                     <audio class="audioPlayer">
-                                        <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                        <source src="musics/California Love_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                     </audio>
                                 </div>
                             </div>
@@ -380,7 +479,7 @@
                                     <img src="imges/spotify-video-play-button-png.gif" alt=""
                                         id="spotify-buton-row3-img4" class="playButton">
                                     <audio class="audioPlayer">
-                                        <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                        <source src="musics/Pehle Bhi Main Animal 320 Kbps.mp3" type="audio/mp3">
                                     </audio>
                                 </div>
                             </div>
@@ -388,19 +487,19 @@
                             <!-- row4 start  -->
                             <div class="row4">
                                 <div class="row4-titel">
-                                    <h2>Made For Akash Goswami</h2>
+                                    <h2>Made For Spotify music</h2>
                                 </div>
                                 <!-- row4 boxes start  -->
                                 <div class="row4-boxes">
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img1.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist1.html"><img src="imges/row4-img1.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/No Reason_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -411,13 +510,13 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img2.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist2.html"><img src="imges/row4-img2.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Close Your Eyes(PaglaSongs).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -427,13 +526,13 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img3.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist3.html"><img src="imges/row4-img3.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Faasle-(PagalSongs.Com.IN).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -444,13 +543,13 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img4.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist4.html"><img src="imges/row4-img4.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Close Your Eyes(PaglaSongs).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -460,13 +559,13 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img5.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist5.html"><img src="imges/row4-img5.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Farming_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -477,13 +576,13 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img6.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist6.html"><img src="imges/row4-img6.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Aam Jahe Munde_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -504,12 +603,12 @@
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img13.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist6.html"><img src="imges/row4-img13.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/King Shit_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -520,13 +619,13 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img7.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist7.html"><img src="imges/row4-img7.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Rubicon Drill_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -537,29 +636,29 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img8.jpg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist8.html"><img src="imges/row4-img13.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Pehle Bhi Main Animal 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
-                                            <h3 style="font-size: 18px; color: #fff;">Boxing Mix</h3>
+                                            <h3 style="font-size: 18px; color: #fff;">Shubhu Mix</h3>
                                             <p style="font-size: 14px;">Time alone mix Music by akyi</p>
                                         </div>
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img9.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="plylist39.html"><img src="imges/row4-img9.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Pehle Bhi Main Animal 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -569,12 +668,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img10.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="plylist39.html"><img src="imges/row4-img10.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Apa Fer Milange-(DJPunjab).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -585,12 +684,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img16.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist11.html"><img src="imges/row4-img16.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Close Your Eyes(PaglaSongs).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -611,12 +710,12 @@
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img11.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
-                                            <img src="imges/spotify-video-play-button-png.gif" alt=""
-                                                id="spotify-buton" class="playButton">
+                                            <a href="playlist26.html"><img src="imges/row4-img11.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
+                                            <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
+                                                class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Husn - Anuv Jain-(DJPunjab).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -627,12 +726,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img12.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist26.html"><img src="imges/row4-img12.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Drippy_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -643,12 +742,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img17.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist12.html"><img src="imges/row4-img17.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Shiddat Reprise Manan Bhardwaj 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -658,12 +757,27 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img14.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist9.html"><img src="imges/row4-img14.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Musafira (DjPunjab.Farm).mp3" type="audio/mp3">
+                                            </audio>
+                                        </div>
+                                        <div class="row4-box1-content">
+                                            <h3 style="font-size: 18px; color: #fff;">Musafir</h3>
+                                            <p style="font-size: 14px;">Huart Touch Songs</p>
+                                        </div>
+                                    </div>
+                                    <div class="row4-box1">
+                                        <div class="row4-box1-img">
+                                            <a href="playlist10.html"><img src="imges/row4-img15.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
+                                            <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
+                                                class="playButton">
+                                            <audio class="audioPlayer">
+                                                <source src="musics/Apa Fer Milange-(DJPunjab).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -674,32 +788,16 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img15.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist7.html"><img src="imges/row3-img7.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/King Shit_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
-                                            <h3 style="font-size: 18px; color: #fff;">Tamil Mix</h3>
-                                            <p style="font-size: 14px;">Thalapathy Vijay, Hesham Abdul Wahab,
-                                                Silambarasan TR</p>
-                                        </div>
-                                    </div>
-                                    <div class="row4-box1">
-                                        <div class="row4-box1-img">
-                                            <img src="imges/row4-img18.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
-                                            <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
-                                                class="playButton">
-                                            <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
-                                            </audio>
-                                        </div>
-                                        <div class="row4-box1-content">
-                                            <h3 style="font-size: 18px; color: #fff;">Daily Mix 1</h3>
+                                            <h3 style="font-size: 18px; color: #fff;">Punjabi</h3>
                                             <p style="font-size: 14px;">Parmish Verma, Savi Kahlon, Gurnam Bhullar and
                                                 more</p>
                                         </div>
@@ -717,27 +815,27 @@
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img19.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist13.html"><img src="imges/row4-img19.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Heeriye Heeriye - Jasleen Royal ! Arijit Singh.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
-                                            <h3 style="font-size: 18px; color: #fff;">Hey_Misteriouson</h3>
-                                            <p style="font-size: 14px;">Hey_itz_Misteriousone</p>
+                                            <h3 style="font-size: 18px; color: #fff;">Hey_Misterious</h3>
+                                            <p style="font-size: 14px;">Hey_itz_Misterious</p>
                                         </div>
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img20.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist14.html"><img src="imges/row4-img20.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Shiddat Reprise Manan Bhardwaj 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -747,12 +845,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img21.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist15.html"><img src="imges/row4-img21.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/_Sukoon_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -773,12 +871,12 @@
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img22.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist17.html"><img src="imges/row4-img22.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Husn - Anuv Jain-(DJPunjab).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -789,12 +887,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img23.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist18.html"><img src="imges/row4-img23.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Chitta Shiddat 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -806,28 +904,28 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img24.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist19.html"><img src="imges/row4-img24.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Pehle Bhi Main Animal 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">Bollywood Mush</h3>
                                             <p style="font-size: 14px;">Let these songs be the background score to your
-                                                love story. Cover - Bhediya</p>
+                                                love.</p>
                                         </div>
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img25.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist20.html"><img src="imges/row4-img25.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Heeriye Heeriye - Jasleen Royal ! Arijit Singh.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -837,34 +935,34 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img26.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist21.html"><img src="imges/row4-img26.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Apa Fer Milange_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">Winter of Love</h3>
                                             <p style="font-size: 14px;">Get cosy and snuggle with these Hindi romantic
-                                                tunes. Cover - Rocky Aur Rani Kii Prem Kahaani </p>
+                                                tunes.</p>
                                         </div>
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img27.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                           <a href="playlist22.html"><img src="imges/row4-img27.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Apa Fer Milange_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">Punjabi Pyar</h3>
                                             <p style="font-size: 14px;">The very best of Punjabi romance featuring
-                                                Sargun Mehta & Jordan Sandhu</p>
+                                            </p>
                                         </div>
                                     </div>
                                     <!-- row4 box1 end  -->
@@ -880,12 +978,12 @@
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img28.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist23.html"><img src="imges/row4-img28.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Rubicon Drill_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -896,12 +994,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img29.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist24.html"><img src="imges/row4-img29.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/No Reason_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -913,12 +1011,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img30.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist25.html"><img src="imges/row4-img30.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Shiddat Reprise Manan Bhardwaj 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -929,12 +1027,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img31.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist26.html"><img src="imges/row4-img31.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Chitta Shiddat 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -945,8 +1043,8 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img32.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist27.html"><img src="imges/row4-img32.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
@@ -955,26 +1053,22 @@
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">Tollywood Pearls</h3>
-                                            <p style="font-size: 14px;">The finest set of Telugu music from the past 10
-                                                years.
-                                                Cover : Hi Nanna</p>
+                                            <p style="font-size: 14px;">The finest set of Telugu music from the past 10</p>
                                         </div>
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img33.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist28.html"><img src="imges/row4-img33.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Pehle Bhi Main Animal 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">Kollywood Cream</h3>
-                                            <p style="font-size: 14px;">Finest collection of Tamil Music from the past
-                                                10 years
-                                                Cover : Jailer</p>
+                                            <p style="font-size: 14px;">Finest collection of Tamil Music from the past</p>
                                         </div>
                                     </div>
                                     <!-- row4 box1 end  -->
@@ -990,8 +1084,8 @@
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img34.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist29.html"><img src="imges/row4-img34.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
@@ -1006,12 +1100,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img35.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist30.html"><img src="imges/row4-img35.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Husn - Anuv Jain-(DJPunjab).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -1022,12 +1116,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img36.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist31.html"><img src="imges/row4-img36.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Hum Dum Shiddat 320 Kbps.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -1038,12 +1132,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img37.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist32.html"><img src="imges/row4-img37.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Apa Fer Milange-(DJPunjab).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -1053,12 +1147,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img38.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist33.html"><img src="imges/row4-img38.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Heeriye Heeriye - Jasleen Royal ! Arijit Singh.mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -1069,12 +1163,12 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img39.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist34.html"><img src="imges/row4-img39.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/No Reason_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -1096,8 +1190,8 @@
                                     <!-- row4 box1 start  -->
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img40.jpg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist35.html"><img src="imges/row4-img40.jpg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
 
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
@@ -1107,18 +1201,17 @@
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">This Is Vishal-Shekhar</h3>
-                                            <p style="font-size: 14px;">This is Vishal-Shekhar. The essential tracks,
-                                                all in one playlist.</p>
+                                            <p style="font-size: 14px;">This is Vishal-Shekhar....</p>
                                         </div>
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img42.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist36.html"><img src="imges/row4-img42.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Rubicon Drill_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
@@ -1129,33 +1222,33 @@
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img43.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist37.html"><img src="imges/row4-img43.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Apa Fer Milange-(DJPunjab).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
                                             <h3 style="font-size: 18px; color: #fff;">All Out 00's Hindi</h3>
                                             <p style="font-size: 14px;">Bollywood songs that ruled hearts in the Y2K
-                                                decade. Cover - Om Shanti Om</p>
+                                                decade.</p>
                                         </div>
                                     </div>
                                     <div class="row4-box1">
                                         <div class="row4-box1-img">
-                                            <img src="imges/row4-img44.jpeg" alt="" width="90%" height="90%"
-                                                class="song-imges">
+                                            <a href="playlist38.html"><img src="imges/row4-img44.jpeg" alt="" width="90%" height="90%"
+                                                class="song-imges"></a>
                                             <img src="imges/spotify-video-play-button-png.gif" alt="" id="spotify-buton"
                                                 class="playButton">
                                             <audio class="audioPlayer">
-                                                <source src="musics/Softly-(PagalWorld).mp3" type="audio/mp3">
+                                                <source src="musics/Aam Jahe Munde_320(PagalWorld.com.cm).mp3" type="audio/mp3">
                                             </audio>
                                         </div>
                                         <div class="row4-box1-content">
-                                            <h3 style="font-size: 18px; color: #fff;">00's Love Hits</h3>
-                                            <p style="font-size: 14px;">Fall in love with 00's Bollywood like never
+                                            <h3 style="font-size: 18px; color: #fff;">90's Love Hits</h3>
+                                            <p style="font-size: 14px;">Fall in love with 90's Bollywood like never
                                                 before! Cover - Bachna Ae Haseeno</p>
                                         </div>
                                     </div>
@@ -1164,6 +1257,62 @@
                                 <!-- row4 boxes end  -->
                             </div>
                             <!-- row4 end  -->
+                            <!-- start footer row -->
+                            <footer>
+                                <div class="footer">
+                                    <div class="footer-link">
+                                        <ul>
+                                            <h3>Company</h3>
+                                            <li><a href="About-page.html">About</a></li>
+                                            <li><a href="#">Jobs</a></li>
+                                            <li><a href="#">For the Record</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>Communities</h3>
+                                            <li><a href="#">For Artists</a></li>
+                                            <li><a href="#">Developers</a></li>
+                                            <li><a href="#">Advertising</a></li>
+                                            <li><a href="#">Investors</a></li>
+                                            <li><a href="#">Vendors</a></li>
+                                        </ul>
+                                        <ul>
+                                            <h3>Useful links</h3>
+                                            <li><a href="suport.html">Support</a></li>
+                                            <li><a href="#">Free Mobile App</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-social-link">
+                                        <a href="#">
+                                            <img src="imges/instagram-icon-png-white-2.jpg" alt="" width="16px" height="16px">
+                                        </a>
+                                        <a href="#">
+                                            <img src="imges/x-social-media-white-icon(footer).webp" alt="" width="16px" height="16px">
+                                        </a>
+                                        <a href="#">
+                                            <img src="imges/facebook-icon-white-png(footer).png" alt="" width="16px" height="16px">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="footer-copy">
+                                        <ul>
+                                            <li><a href="#">Legal</a></li>
+                                            <li><a href="#">Safety & Privacy Center
+                                            </a></li>
+                                            <li><a href="#">Privacy Policy
+                                            </a></li>
+                                            <li><a href="#">Cookies</a></li>
+                                            <li><a href="#">About Ads</a></li>
+                                            <li><a href="#">
+                                                Accessibility</a></li>
+                                        </ul>
+                                    <p>
+                                        © 2024 Spotify Techboy
+                                    </p>
+                                </div>
+
+                            </footer>
+
+                            <!-- end footer row  -->
                         </div>
                         <!-- scrolebal bar r3r4 end  -->
                     </div>
